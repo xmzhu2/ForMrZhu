@@ -1,0 +1,40 @@
+
+.tip_no_stop {
+    -webkit-animation: tip_no_stop 2s linear  infinite;
+}
+
+.fontBox.ng-hide-add  {
+    -webkit-animation:0.6s comeout;
+}
+
+.fontBox.ng-hide-remove{
+    -webkit-animation:0.6s comein;
+}
+
+@-webkit-keyframes tip_no_stop{
+    0% {
+        background:red;
+    }
+}
+
+@-webkit-keyframes comein {
+    0% {
+            position:absolute;
+            left : -1000px;
+        }
+    100% {
+            overflow: hidden;
+            left : 100px;
+         }
+}
+
+@-webkit-keyframes comeout {
+    0% {
+            left : 0px;
+    }
+    100% {
+
+            left : 1000px;
+         }
+}
+

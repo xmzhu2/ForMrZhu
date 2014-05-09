@@ -1,0 +1,67 @@
+
+<div class="fontBox x_loading_top" ng-show="teach.newTeachStep == 1" style="background: #57696D;border-radius: 10px;">
+    <div class="row">
+        <div class= "col-lg-4 col-lg-offset-1">
+            <span class="hideFont font1" style="font-size:130px;" ng-click="teach.next()"> What</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-2 col-lg-offset-5">
+            <span style="font-size:66px;"> is</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-4 col-lg-offset-7">
+            <span style="font-size:98px;" class="hideFont"> New?</span>
+        </div>
+    </div>
+</div>
+
+<div class="fontBox x_loading_top" ng-show="teach.newTeachStep == 2" style="background: #57696D;border-radius: 10px;">
+    <div class="row">
+        <div class= "col-lg-4 col-lg-offset-1">
+            <span class="font2" style="font-size:80px;"> 权限</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-2 col-lg-offset-3">
+            <span style="font-size:33px;"> 现在需要登陆了！！</span>
+        </div>
+        <div class= "col-lg-4 col-lg-offset-3">
+            <span class="show_on_hover" style="font-size:33px;" ng-click="teach.next()"> next -> </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-4 col-lg-offset-7">
+            <span style="font-size:98px;" class="hideFont"> $_$</span>
+        </div>
+    </div>
+</div>
+
+<div ng-show="teach.newTeachStep == 3" class="x_secret" style="left:80px;top:110px;">
+
+    <h4>Some code has Secrets</h4>
+    <h5>很多地方都有秘密</h5>
+    <h6>通过他你可以得到特权</h6>
+</div>
+
+<div class="fontBox x_loading_top" ng-show="teach.newTeachStep == 3" style="background: #57696D;border-radius: 10px;">
+    <div class="row">
+        <div class= "col-lg-8 col-lg-offset-1">
+            <span class="font1" style="font-size:80px;"> &lt;＝ Tool</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-6 col-lg-offset-1">
+            <span style="font-size:24px;"> 所有工具集合将在Tool工具下找到，当然，你必须登陆才可以看到tool</span>
+        </div>
+        <div class= "col-lg-4 col-lg-offset-1">
+            <span class="show_on_hover" style="font-size:33px;" ng-click="teach.end()"> end </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-lg-6 col-lg-offset-6">
+            <span style="font-size:58px;" class="hideFont"> Mr Zhu</span>
+        </div>
+    </div>
+</div>

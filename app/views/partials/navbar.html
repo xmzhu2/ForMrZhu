@@ -1,0 +1,37 @@
+<div class="header" ng-controller="NavbarCtrl">
+
+   <ul class="nav nav-pills pull-right">
+    <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+        <a ng-click = "$emit('toolbarEvent',item.title);item.tip = false" ng-class="{tip_no_stop:item.tip}">
+            {{item.title}}
+        </a>
+    </li>
+  </ul>
+
+  <h3 class="text-muted" >
+    <a class="x_user_name" tooltip='{{user.loginTip}}' tooltip-placement="bottom"> {{user.name}} </a>
+  </h3>
+  <div class="x_login_div" collapse="!loginShow">
+      <form class="form-horizontal" role="form">
+          <div class="form-group">
+              <label for="username" class="col-lg-2 control-label">Username:</label>
+              <div class="col-lg-10">
+                  <input type="text" class="form-control" id="username" ng-model="login.username" required
+                         placeholder="Username like xmZhu2,some one has auto register">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="password" class="col-lg-2 control-label">Password:</label>
+              <div class="col-lg-10">
+                  <input type="password" class="form-control" id="password" ng-model="login.password" required
+                         placeholder="Password，default as 111">
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-lg-12">
+                  <button type="button" class="btn btn-success btn-lg btn-block" ng-click="login.login()">Sign in</button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>

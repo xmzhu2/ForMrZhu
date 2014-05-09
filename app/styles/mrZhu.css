@@ -1,0 +1,112 @@
+
+.x_loading {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.6;
+    height: 100%;
+    z-index: 1000;
+}
+
+
+.x_loading_top {
+    z-index: 1001;
+    position: relative;
+}
+
+/** 用户名 */
+a.x_user_name:hover,
+a.x_user_name:visited,
+a.x_user_name {
+    color: #d1cacf;
+    text-decoration:none;
+    cursor: default;
+}
+
+/** 秘密提示*/
+.x_secret {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px #3399FF solid;
+    border-radius: 5px;
+    background: #33FFFF;
+    min-width: 120px;
+    min-height: 80px;
+    cursor: default;
+    position: absolute;
+    opacity: 0;
+    z-index: 2001;
+}
+
+.x_secret:hover {
+    cursor: pointer;
+    background: #33CCFF;
+    opacity: 1;
+}
+
+.fontBox {
+    border:1px #ffffff solid;
+    cursor: default;
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    background-color: hsl(210,50%,20%);
+}
+
+.fontBox:hover {
+    text-shadow: red 0 0 100px;
+    transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+
+}
+
+.fontBox .hideFont{
+    cursor: pointer;
+    color: hsla(0,0%,0%,0);
+    text-shadow: #fff 0 0 80px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+
+.fontBox .show_on_hover{
+    opacity: 0;
+}
+
+.fontBox .show_on_hover:hover{
+    opacity: 1;
+}
+
+.fontBox:hover .hideFont{
+    color: #222;
+    text-shadow: #fff 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+.fontBox .hideFont.font1:hover {
+    text-align: center;
+    margin: 200px auto;
+    font-family: "League-Gothic", Courier;
+    font-size: 200px;
+    text-transform: uppercase;
+    color: #222;
+    text-shadow: 0px 2px 3px #666;
+}
+
+
+/** 字体 */
+.font1 {
+    text-align: center;
+    margin: 200px auto;
+    font-family: "League-Gothic", Courier;
+    font-size: 200px;
+    text-transform: uppercase;
+    color: #222;
+    text-shadow: 0px 2px 3px #666;
+}
+
+.font2 {
+    text-align: center;
+    margin: 200px auto;
+    font-family: "League-Gothic", Courier;
+    font-size: 200px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+}
